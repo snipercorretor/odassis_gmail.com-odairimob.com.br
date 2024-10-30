@@ -1,0 +1,11 @@
+{
+    "nome":"Haus 34",
+    "recursos":[
+        {
+        "responsivo": "sim",
+        "layout": "1 coluna",
+        "video":"não",
+        "galeria_de_fotos":"sim"
+        }
+    ]
+}

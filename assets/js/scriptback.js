@@ -1,0 +1,7 @@
+const debounce=function(e,t,n){let o;
+    return function(...r){const c=this,l=n&&!o;clearTimeout(o),o=setTimeout(function(){o=null,n||e.apply(c,r)},t),l&&e.apply(c,r)}};
+    function animeScroll(){const e=window.pageYOffset+3*window.innerHeight/4;target.forEach(t=>{e>t.offsetTop?t.classList.add(animationClass):t.classList.remove(animationClass)})}target=document.querySelectorAll("[data-anime]"),
+    animationClass="animate",animeScroll(),target.length&&window.addEventListener("scroll",
+    debounce(()=>{animeScroll()},200));var controle=!1;window.onscroll=function(){
+        if(!controle){controle=!0,setTimeout(function(){controle=!1},200);for(var e=document.querySelectorAll("img[data-src]"),t=0;t<e.length;t++)e[t].getBoundingClientRect().top<window.innerHeight+3*window.innerHeight/4&&(e[t].src=e[t].getAttribute("data-src"))}},
+        setTimeout(()=>{console.log('video');},1500);let slides=document.querySelectorAll(".slide"),dots=document.querySelectorAll(".dot"),next=document.querySelector(".next"),prev=document.querySelector(".prev");slides.forEach(function(e,t){e.style.left=`${100*t}%`});var counter=0;function carousel(){counter==slides.length&&(counter=0),counter<0&&(counter=slides.length-1),slides.forEach(function(e){e.style.transform=`translateX(-${100*counter}%)`})}next.addEventListener("click",function(){counter++,carousel(),console.log(counter)}),prev.addEventListener("click",function(){counter--,carousel(),console.log(counter)});
