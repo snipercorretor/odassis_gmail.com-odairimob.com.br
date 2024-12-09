@@ -1,225 +1,452 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<title>23 Paysandu - Experiência Imohoo</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("assets/img/topo.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-footer {
-    /*height: 164px;*/
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #222736;
-    color: white;
-    width: 100%;
-}
-
-.w3-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #222736;
-    color: white;
-}
-
-.w3-bar .w3-bar-item{
-  font-size: large;
-}
-
-img.trademark-img{
-  max-width: 120px;
-}
-
-#msg_topo{
-    background-color: cornflowerblue;
-    opacity: 90%;
-    border-radius: 10px;
-}
-
-.wrap-cards{
-  display: flex;
-  flex-wrap: wrap; 
-}
-
-.col-cards{
-  display: flex;
-}
-
-.flex-card{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.card-header{
-  flex: 1;
-}
-
-.card-content{
-  flex: 1;
-  line-height: 1.6em;
-}
-
-.card-header img{
-  width: 100%;
-  height: 200px;
-}
-
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="trademark-img" src="assets/img/layout/logo_sniper_branco.webp" alt="Logo" style="max-width: 120px;"></a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#" class="w3-bar-item w3-button">Início</a>
-      <a href="#lancamentos" class="w3-bar-item w3-button">Lançamentos</a>
-      <a href="#sobre" class="w3-bar-item w3-button">Sobre</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
-  <a href="#lancamentos" onclick="w3_close()" class="w3-bar-item w3-button">Lançamentos</a>
-  <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">Sobre</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div id="msg_topo" class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Imobiliária de Testes do Odair</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Imobiliária de Testes do Odair</span><br>
-    <span style="display:none;" class="w3-large">Seus sonhos importam.</span>
-    <p><a href="https://api.whatsapp.com/send?phone=(99) 99999-9999&text=home" target='_blank' class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Fale agora com a gente</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-
-<!-- Lançamentos -->
-<div id="lancamentos" class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">Lançamentos</h3>
-  <!--<p class="w3-center w3-large">The ones who runs this company</p>-->
-  <div class="w3-row-padding w3-grayscale wrap-cards" style="margin-top:64px">
+<!DOCTYPE html><html lang="pt-br"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Apartamentos que são verdadeiras casas suspensas"> 
+        <meta name="keywords" content="Apartamentos Rio de Janeiro"> 
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow, max-snippet:-1,max-image-preview:large, max-video-preview:-1">
+        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <link rel="canonical" href="zonaleste.shop/paysandu-odair-imob">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="23 Paysandu - Experiência Imohoo">
+        <meta property="og:description" content="Apartamentos que são verdadeiras casas suspensas">
+        <meta property="og:url" content="zonaleste.shop/paysandu-odair-imob">
+        <meta property="og:site_name" content="23 Paysandu - Experiência Imohoo">
+        <meta property="article:modified_time" content="2024-12-09T14:02:05.707Z">
+        <meta property="og:image" content="zap.svg">
+        <meta name="twitter:card" content="summary_large_image">
     
-      
-        <div class="w3-col l3 m6 w3-margin-bottom col-cards">
-          <div class="w3-card flex-card">
-            <div class="card-header">
-              <img oldsrc="assets/img/casa.jpg" src="paysandu-odair-imob/assets/img/zap.svg" 
-                  alt="paysandu-odair-imob" onerror="this.src='assets/img/casa.jpg'">
-            </div>  
-            <div class="w3-container card-content">
-              <h3>23 Paysandu - Experiência Imohoo</h3>
-              <p class="w3-opacity"></p>
-              <p>Apartamentos que são verdadeiras casas suspensas</p>
-              
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&amp;display=swap" rel="preload" as="font" type="font/woff2">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&amp;display=swap" rel="preload" as="font" type="font/woff2">
+        <style>
+            html,
+            body {
+                overflow-x: hidden;
+            }
+            html,
+            body,
+            div,
+            span,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            ol,
+            ul,
+            li,
+            form,
+            label,
+            article,
+            footer,
+            header,
+            nav,
+            section,
+            main {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                vertical-align: baseline;
+            }
+            a {
+                text-decoration: none;
+            }
+            ol,
+            ul {
+                list-style: none;
+            }
+            h1 {
+                font-size: 55px;
+                color: #fff;
+                font-family: "Ubuntu", Sans-serif;
+                font-weight: bold;
+            }
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            ul {
+                font-size: 1em;
+                font-weight: normal;
+            }
+            p {
+                color: #636363;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 0.8rem;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Roboto", sans-serif;
+                scroll-behavior: smooth;
+                background-color: #e6e6e6;
+                overflow: hidden;
+            }
+            .container {
+                width: 1150px;
+                margin: 0 auto;
+            }
+            .titulo {
+                font-family: "Ubuntu", Sans-serif;
+                font-size: 42px;
+                margin-bottom: 1rem;
+                color: #424242;
+                font-weight: 600;
+            }
+            header {
+                width: 100%;
+                height: 75px;
+                background-color: #000;
+                position: fixed;
+                top: 0;
+                z-index: 100;
+            }
+            header .container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header .container button {
+                width: 235px;
+                height: 40px;
+            }
+            .btn {
+                background-color: #09cf00;
+                border: none;
+                color: #fff;
+                font-weight: 600;
+                font-size: 15px;
+                border-radius: 5px;
+                padding: 10px;
+                transition: filter 0.5s;
+                outline: none;
+            }
+            .btn:hover {
+                cursor: pointer;
+                filter: brightness(90%);
+                transform: scale(1.1);
+            }
+            section {
+                margin-top: 75px;
+            }
+            .capa {
+                height: 730px;
+                background-color: transparent;
+                background-image: linear-gradient(200deg, #ffffff00 0%, #000 100%), url("assets/img/paysandu_total.jpg");
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                opacity: 0.9;
+                transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            }
+            .capa .container {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+            .destaque {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #0ec606d6 0%, #0aa808c9 63%);
+                width: 430px;
+                height: 390px;
+                color: #fff;
+                border: 5px solid rgba(0, 0, 0, 0.925);
+                box-shadow: 0 15px 15px rgba(0, 0, 0, 0.925);
+            }
+            .destaque h4,
+            .destaque h3,
+            .destaque h2 {
+                font-size: 19px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .destaque h1 {
+                margin-bottom: 20px;
+            }
+            .destaque h2 {
+                font-size: 49px;
+            }
+            .action {
+                margin-top: 20px;
+                width: 236px;
+                height: 52px;
+                background-color: transparent;
+                border: 5px solid #fff;
+                color: #fff;
+                font-size: 16px;
+                outline: none;
+                padding: 10px;
+                font-weight: 600;
+                transition: all 0.5s;
+            }
+            .action:hover {
+                background-color: #fff;
+                cursor: pointer;
+                color: #000;
+            }
+            .btn-zap {
+                width: 100px;
+                height: 55px;
+                position: fixed;
+                bottom: 10px;
+                left: 10px;
+                background-color: #25d366;
+                border-radius: 25px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 10px;
+                color: #fff;
+                font-size: 1rem;
+                transition: all 0.5s;
+            }
+            .btn-zap img {
+                width: 35px;
+            }
+            .btn-zap:hover {
+                background-color: #000;
+            }
+            @media only screen and (min-width: 900px) and (max-width: 1150px) {
+                .container {
+                    width: 80%;
+                }
+            }
+            @media only screen and (min-width: 788px) and (max-width: 899px) {
+                .container {
+                    width: 80%;
+                }
+            }
+            @media only screen and (min-width: 551px) and (max-width: 787px) {
+                .titulo {
+                    text-align: center;
+                }
+                .container {
+                    width: 80%;
+                }
+            }
+            @media only screen and (max-width: 550px) {
+                header {
+                    height: auto;
+                    padding: 5px;
+                }
+                header .container {
+                    flex-wrap: wrap;
+                }
+                .container {
+                    width: 90%;
+                }
+                .destaque {
+                    padding: 10px;
+                }
+                .destaque h1,
+                .destaque h2 {
+                    font-size: 2.8rem;
+                    text-align: center;
+                }
+                .destaque h4,
+                .destaque h3 {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        </style>
+        <link rel="stylesheet" as="style" href="assets/css/style.css" onload="this.rel='stylesheet'">
+        <noscript><link rel="styleshhet" href="assets/css/style.css" /> </noscript>
+        <title>23 Paysandu - Experiência Imohoo</title>
+        <meta name="description" content="Viva em um dos bairros mais bem localizados do Rio de Janeiro">
+        <meta name="keywords" content="Rio de Janeiro, apartamentos, boa localização, Flamengo">
+    <script id="gtm_script" type="text/javascript">if(window.location == window.parent.location){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-XXXXXX');}</script></head>
+    <body>
+        <header>
+            <div class="container"><img src="assets/img/logo.svg" alt="logo" title="logo"> <button class="btn link-to-zap">FALAR COM UM CORRETOR</button></div>
+        </header>
+        <section class="capa editable-background">
+            <div class="container animar-inicio">
+                <div class="destaque">
+                    <h1 contenteditable="false">23 Paysandu</h1>
+                    <h4 contenteditable="false">Tatuapé, São Paulo</h4>
+                    <h3 contenteditable="false">LINDOS APARTAMENTOS A PARTIR DE</h3>
+                    <h2 contenteditable="false">R$ 505.000,11</h2>
+                    <button class="action"><span contenteditable="false">SAIBA MAIS DETALHES</span></button>
+                </div>
             </div>
-            <div class="w3-container card-footer">
-              <p><a href="paysandu-odair-imob/" target="_blank" class="w3-button w3-light-grey w3-block"><i class="fa fa-link"></i> Saber mais</a></p>
+        </section>
+        <section class="desc container">
+            <h2 class="titulo" contenteditable="false">Viva em um dos bairros mais bem localizados do Rio de Janeiro</h2>
+            <p id="intro" contenteditable="false">O <strong>23 Paysandu Flamengo</strong> é a oportunidade perfeita para quem possui um estilo de vida dinâmico e deseja morar em um dos bairros mais bem localizados e com melhor infraestrutura do Rio de Janeiro.</p>
+            <div class="galeria">
+                <picture>
+                    <source srcset="assets/img/paissandu-21-fachada-noitereduzida_mobile.png" media="(max-width:787px)">
+                    <img no-data-anime="left" data-src="assets/img/paissandu-21-fachada-noitereduzida.jpg" alt="paissandu-21-fachada-noitereduzida" src="assets/img/paissandu-21-fachada-noitereduzida.jpg" title="paissandu-21-fachada-noitereduzida">
+                </picture>
+                <div class="paysandu-desc">
+                    <picture>
+                        <source srcset="assets/img/paysandu_sala-1024x562_mobile.png" media="(max-width:787px)">
+                        <img no-data-anime="right" data-src="assets/img/paysandu_sala-1024x562.jpg" alt="paysandu_sala-1024x562" src="assets/img/paysandu_sala-1024x562.jpg" title="paysandu_sala-1024x562">
+                    </picture>
+                    <p contenteditable="false">
+                        A arquitetura única do 23 Paysandu em estilo Art Déco da Cité, o paisagismo do Escritório Burle Marx e a iluminação de Maneco Quinderé fazem com que o prédio promova o encontro do design histórico com a modernidade,
+                        oferecendo uma construção elegante que se harmoniza com os espaços valorizados do Flamengo.
+                    </p>
+                    <p contenteditable="false">Se você busca um imóvel com dimensões mais reduzidas em uma região com muita infraestrutura de comércios, gastronomia, lazer e serviços essenciais, essa é uma opção mais exclusiva para sua moradia.</p>
+                    <p contenteditable="false">O condomínio fica a 5 minutos de distância da praia e do Parque do Flamengo.</p>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
+        <main class="informacoes editable-background">
+            <div class="container">
+                <ul>
+                    <li contenteditable="false">- Localização privilegiada na rua mais charmosa do Flamengo</li>
+                    <li contenteditable="false">- Móveis confortáveis e elegantes.</li>
+                    <li contenteditable="false">- Infraestrutura completa de comércio e serviços nos arredores.</li>
+                    <li contenteditable="false">- Projeto exclusivo. Somente 50 unidades</li>
+                </ul>
+                <button no-data-anime="top" class="btn link-to-zap"><span contenteditable="false">FALAR COM UM CORRETOR</span></button>
+            </div>
+        </main>
+        <section class="sobre">
+            <div class="container">
+                <h2 class="titulo" contenteditable="false">Um pouco sobre o 23 Paysandu</h2>
+                <div class="sobre-info">
+                    <p contenteditable="false">
+                        O <strong>23 Paysandu</strong> é um empreendimento composto por apartamentos tipo e apartamentos garden, com o diferencial de oferecer plantas flexíveis cuja configuração pode ser personalizada para que combine ainda
+                        mais com os moradores.
+                    </p>
+                    <p contenteditable="false">Entre as configurações possíveis, está a transformação do quarto em suíte (nas unidades de 1 quarto) e a opção de cozinha americana, que dá ao imóvel um toque contemporâneo e prático.</p>
+                    <p contenteditable="false">Os apartamentos possuem área total interna que vai de 28 m² até 47 m², 1 ou 2 quartos e opções de unidades com 1 suíte.</p>
+                    <p contenteditable="false">Os imóveis, de metragens mais enxutas, são perfeitos para quem vive uma vida mais prática e dinâmica, e que não abre mão da elegância e do conforto para a sua moradia.</p>
+                    <p contenteditable="false">Os apartamentos garden possuem metragens que variam de 48 m² até 81 m², 1 ou 2 quartos e unidades que incluem 1 suíte.</p>
+                    <p contenteditable="false">As unidades possuem lindos terraços descobertos que oferecem uma belíssima vista para a região e têm previsão de espaço para instalação de piscina e deck.</p>
+                    <p contenteditable="false">O empreendimento conta com o diferencial das plantas flexíveis, que permitem que o morador escolha as configurações de imóvel que mais se adequam à sua personalidade, ao seu cotidiano e ao seu estilo.</p>
+                </div>
+                <div class="sobre-imgs">
+                    <picture>
+                        <source srcset="assets/img/paysandu_apresentacao_mobile.jpg" media="(max-width:550px)">
+                        <img no-data-anime="bottom" data-src="assets/img/paysandu_apresentacao.png" alt="paysandu_apresentacao" src="assets/img/paysandu_apresentacao.png" title="paysandu_apresentacao">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/img/paysandu_sol_mobile.jpg" media="(max-width:787px)">
+                        <img no-data-anime="top" data-src="assets/img/paysandu_sol.jpg" alt="paysandu_sol" src="assets/img/paysandu_sol.jpg" title="paysandu_sol">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="experiencia">
+            <div class="container elevacao">
+                <h2 class="titulo" contenteditable="false">A experiência única de viver aqui</h2>
+                <div id="video-yt" class="troca-video-yt video-container" style="border-radius: 15px;width: 844px;height: 479px;background: darkgray;">
+                    <iframe class="lazyload" width="844" height="479" data-src="https://www.youtube.com/embed/LNmhVBMNvU8"></iframe>
+                </div>                
+                <button class="action link-to-zap" no-data-anime="bottom"><span contenteditable="false">FALAR COM UM CORRETOR</span></button>
+            </div>
+        </section>
+        <section class="inters">
+            <div class="container interessados">
+                <h2 class="titulo" contenteditable="false">Interessado no 23 Paysandu Flamengo?</h2>
+                <div class="interessados-conteudo">
+                    <div class="conteudo">
+                        <h3 class="subtitulo titulo" contenteditable="false">Se antecipe para garantir uma das 50 unidades disponíveis</h3>
+                        <ul>
+                            <li contenteditable="false">O 23 Flamengo reúne o que há de melhor para morar no Flamengo.</li>
+                            <li contenteditable="false">O condomínio fica a menos de 5 minutos de distância da praia e do Parque do Flamengo.</li>
+                            <li contenteditable="false">A região se configura em um convite irrecusável para passeios a pé com a família e amigos, para praticar esportes e para programas culturais e gastronômicos.</li>
+                            <li contenteditable="false">As 50 unidades exclusivas do empreendimento reproduzem a elegância e o conforto inigualável.</li>
+                            <li contenteditable="false">Essa é uma grande oportunidade. Talvez não esteja disponível por muito tempo.</li>
+                        </ul>
+                        <button no-data-anime="left" class="btn link-to-zap"><span contenteditable="false">QUERO UM ATENDIMENTO EXCLUSIVO</span></button>
+                    </div>
+                    <picture>
+                        <source srcset="assets/img/20201105051216-paysandu-23_mobile.jpg" media="(max-width:450px)">
+                        <img no-data-anime="right" src="assets/img/20201105051216-paysandu-23.jpg" alt="20201105051216-paysandu-23" title="20201105051216-paysandu-23">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <footer> 
+            <picture>
+                <img class="trademark-img" src="/assets/img/logo_sniper.png" alt="logo_sniper" title="logo_sniper">
+            </picture> 
+            <p class="trademark" contenteditable="false"><strong>© 2021 <a href="https://ocorretorsniper.com.br/" rel="noopener" target="_blank">O Corretor Sniper</a>. Todos os direitos reservados.</strong></p>
+        </footer> 
     
-        
+        <a class="btn-zap" id="link_zap" target="_blank" href="https://api.whatsapp.com/send?phone=&amp;text=paysandu-odair-imob" rel="noopener"> 
+            <img src="assets/img/layout/zap.svg" alt="zap" title="zap"> 
+            <span contenteditable="false">Chat</span> 
+        </a>
+    
+        <!--<script async src="assets/js/script.js"></script>-->
+        <script src="assets/js/lazysizes.min.js" async=""></script>
+        <script>
+            // Faz os botões de acionamento de zap apontarem para o botão de link:
+            document.querySelectorAll(".link-to-zap").forEach((el) => {
+                el.addEventListener("click", (ev) => {
+                    let linkZap = document.getElementById("link_zap");
+                    if (linkZap) {
+                        if ((el.firstChild.contentEditable=="true") || (ev.target.firstChild.contentEditable=="true")){
+                            console.log('Linkado para whatsapp!');
+                        }else{
+                            linkZap.click();
+                        }
+                        
+                    }
+                });
+            });
+
+        </script>
     
 
-</div>
-
-<!-- "Sobre nós" -->
-<div id="sobre" class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3 >Sobre Nós.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="https://api.whatsapp.com/send?phone=(99) 99999-9999&text=home" target='_blank' class="w3-button w3-black"><i class="fa fa-phone"> </i> Fale com a gente</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="assets/img/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<footer> 
-  <picture><img class="trademark-img" src="assets/img/layout/logo_sniper_branco.webp" alt="Logo"></picture>
-  <p class="trademark"><strong>© 2022 <a href="https://ocorretorsniper.com.br/" rel="noopener" target="_blank">O Corretor Sniper</a>. Todos os direitos reservados.</strong></p> 
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>
+<script id="zap_script" type="text/javascript">document.querySelectorAll(".link-to-zap").forEach((el) => {
+                                el.addEventListener("click", (ev) => {
+                                    if ((el.firstChild.contentEditable=="true") || (ev.target.firstChild.contentEditable=="true")){
+                                        console.log('Em edição!');
+                                    }else{
+                                        console.log('Em produção!');
+                                        let linkZap = document.getElementById("link_zap");
+                                        if(linkZap){
+                                            let linkOrig = linkZap.href;
+                                            if(linkOrig){
+                                                console.log(linkZap.href);
+                                                let novaRota = null;
+                                                let nomeImovel = el.parentElement.querySelector("h3.nome");
+                                                if(nomeImovel){
+                                                    if(nomeImovel.innerText){
+                                                        novaRota = nomeImovel.innerText.replace(/\s+/g, '-').toLowerCase();
+                                                    }
+                                                }
+                                                
+                                                if(novaRota){
+                                                    let novoLink = linkOrig.replace(linkOrig.substring(linkOrig.indexOf("text=")+5),novaRota);
+                                                    console.log('Novo link: ' + novoLink);
+                                                    window.open(novoLink, '_blank');
+                                                }else{
+                                                    linkZap.click();
+                                                }
+                                            }else{
+                                                console.log('Zap não configurado...');
+                                            }
+                                        }
+                                    }
+                                });
+                            });</script></body></html>
